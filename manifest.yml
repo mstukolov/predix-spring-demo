@@ -1,0 +1,10 @@
+---
+applications:
+- name: predix-spring-demo
+  buildpack: java_buildpack
+  memory: 128M
+  instances: 1
+  host: predix-spring-demo
+  path: target/predix-spring-demo-0.0.1-SNAPSHOT.jar
+  no-route: true
+  java_main_class: com.taskdata.demo.PredixSpringDemoApplication
